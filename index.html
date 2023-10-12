@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Craque Bitume</title>
 </head>
 <body>
 
     <header>
+        <!-- Bannière popup -->
         <div class="popup">
             <p class="text">Travail complété dans le cadre du cours Projet Web</p>
-            <button class="button">Accéder au vrai site de Craque-Bitume</button>
+            <a href="https://craquebitume.org/"><button class="button">Accéder au vrai site de Craque-Bitume</button></a>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                 <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
             </svg>    
         </div>
 
         <!-- NavBar -->
-        <nav class="navbar navbar-light navbar-expand-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-dark navbar-expand-lg sticky-top ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="sources/medias/extras/craquebitume.png" alt=""></a>
 
                 <!-- Hamburger button -->
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
@@ -51,7 +54,6 @@
                         <li class="nav-item">
                             <a href="pages/histoire.html" class="nav-link">Histoire</a>
                         </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -60,6 +62,42 @@
     </header>
     
     <section class="hero">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="sources\medias\accueil\intro-craque_1500x.webp" alt="intro-craque_1500x">
+                    <div class="text">
+                    <h1>La nature et l'écocitoyenneté vous interpellent?</h1>
+                    <p>Craque-bitume, un collectif d'écologie urbaine, pourrait bien être l'écho à votre appel!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="sources\medias\accueil\intro-craque_1500x.webp" alt="intro-craque_1500x">
+                    <div class="text">
+                    <h1>La nature et l'écocitoyenneté vous interpellent?</h1>
+                    <p>Craque-bitume, un collectif d'écologie urbaine, pourrait bien être l'écho à votre appel!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="sources\medias\accueil\intro-craque_1500x.webp" alt="intro-craque_1500x">
+                    <div class="text">
+                    <h1>La nature et l'écocitoyenneté vous interpellent?</h1>
+                    <p>Craque-bitume, un collectif d'écologie urbaine, pourrait bien être l'écho à votre appel!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section>
 
     </section>
     <div class="footer">
@@ -68,5 +106,7 @@
         <a href="https://github.com/Jasmine-Lapierre/craque-bitume-minous-slayers/">Lien vers le github</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
