@@ -1,0 +1,59 @@
+@use "sass:color";
+
+//Swiper
+.swiper {
+    width: 100%;
+    height: 100%;
+    background: color.adjust(#F6F9F1, $alpha: -0.5);
+    text-align: left;
+    color: var(--foret);
+
+    &-image {
+        max-width: 70%;
+        width: 100%;
+        justify-self: center;
+        align-self: center;   
+        .imgtext {
+            text-align: left;
+        }
+    }
+&-slide {
+    padding: 0 10% 0 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+        align-self: center;    
+        border-radius: 25px;
+        object-fit: contain;
+    }
+    .text {
+        justify-self: center;
+        align-self: center;    
+    }
+    h1 {
+        justify-self: center;
+        align-self: center;    
+        text-align: end;
+        padding-bottom: 50px;
+        font-weight: bold;
+    }
+    p {
+        font-size:20px;
+        justify-self: center;
+        align-self: center;    
+        text-align: end;
+    }
+}
+
+&-button-prev, &-button-next {
+    padding: 0 20px 0 20px;
+    color: var(--foret);
+}
+&-pagination-bullet  {
+    background-color: var(--foret);
+}
+}
