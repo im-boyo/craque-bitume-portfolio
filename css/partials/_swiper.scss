@@ -9,7 +9,7 @@
     color: var(--foret);
 
     &-image {
-        max-width: 70%;
+        max-width: 80%;
         width: 100%;
         justify-self: center;
         align-self: center;   
@@ -20,7 +20,7 @@
 &-slide {
     padding: 0 10% 0 10%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     
     img {
         width: 100%;
