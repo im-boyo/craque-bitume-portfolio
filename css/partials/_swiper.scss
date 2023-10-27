@@ -7,6 +7,12 @@
     background: color.adjust(#F6F9F1, $alpha: -0.5);
     text-align: left;
     color: var(--foret);
+    border-radius: 25px;
+    box-shadow: inset 0 5px 10px #00000056;
+
+    &-main {
+        background: color.adjust(#D4E084, $alpha: -0.5);
+    }
 
     &-image {
         max-width: 80%;

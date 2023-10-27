@@ -12,6 +12,11 @@
   background: rgba(246, 249, 241, 0.5);
   text-align: left;
   color: var(--foret);
+  border-radius: 25px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.337254902);
+}
+.swiper-main {
+  background: rgba(212, 224, 132, 0.5);
 }
 .swiper-image {
   max-width: 80%;
@@ -33,8 +38,7 @@
   justify-self: center;
   align-self: center;
   border-radius: 25px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .swiper-slide .text {
   justify-self: center;
@@ -64,6 +68,7 @@
 .navbar {
   background-color: var(--asperge);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.337254902);
+  width: 100%;
   z-index: 1;
 }
 .navbar-brand img {
@@ -89,6 +94,45 @@
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
+.leaf1 {
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+  right: -100px;
+  transform: rotateZ(90deg) scaleY(-1);
+}
+.leaf2 {
+  position: absolute;
+  z-index: 2;
+  top: -20%;
+  left: -100px;
+  transform: rotateZ(20deg);
+}
+.leaf3 {
+  position: absolute;
+  z-index: 2;
+  top: -20%;
+  right: -100px;
+  transform: rotateZ(160deg) scaleY(-1);
+}
+
+.card {
+  background-image: url(/sources/medias/accueil/pexels-photo-121629_535x.webp);
+  object-fit: cover;
+  width: 30%;
+  border-radius: 25px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.card-image {
+  height: 400px;
+}
+.card-body {
+  height: 50%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
 * {
   font-family: "Playfair Display", serif;
   box-sizing: border-box;
@@ -100,6 +144,7 @@ body {
   width: 100vw;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -116,7 +161,7 @@ section {
   width: 100%;
   height: 120vh;
   position: relative;
-  padding: 100px 50px;
+  padding: 10vw 50px;
   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.337254902);
 }
 section:nth-child(even) {
@@ -124,6 +169,12 @@ section:nth-child(even) {
 }
 section:nth-child(odd) {
   background-color: var(--poudre);
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .popup {
@@ -149,7 +200,6 @@ section:nth-child(odd) {
   font-size: 20px;
 }
 .popup a {
-  width: -moz-fit-content;
   width: fit-content;
   justify-self: center;
   align-self: center;
@@ -181,8 +231,8 @@ section:nth-child(odd) {
   margin: 15px;
 }
 
-.footer {
-  position: absolute;
+footer {
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
