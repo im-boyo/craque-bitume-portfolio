@@ -25,8 +25,9 @@
     }
 &-slide {
     padding: 0 10% 0 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     img {
         width: 100%;

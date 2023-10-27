@@ -1,6 +1,6 @@
 # Craque bitume
 ## Minous slayers
- Felix Testa Radovanovic, Kye Boustany et Jasmine Lapierre
+ Felix Testa Radovanovic et Jasmine Lapierre
 
  
 [Projet Web | 582-518MO](https://tim-montmorency.com/timdoc/582-518MO/projet/)

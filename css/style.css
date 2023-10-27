@@ -29,8 +29,9 @@
 }
 .swiper-slide {
   padding: 0 10% 0 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .swiper-slide img {
   width: 100%;
@@ -38,7 +39,8 @@
   justify-self: center;
   align-self: center;
   border-radius: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .swiper-slide .text {
   justify-self: center;
@@ -118,19 +120,23 @@
 
 .card {
   background-image: url(/sources/medias/accueil/pexels-photo-121629_535x.webp);
-  object-fit: cover;
-  width: 30%;
+  width: 100%;
+  background-size: cover;
   border-radius: 25px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  border: none;
 }
 .card-image {
   height: 400px;
 }
 .card-body {
   height: 50%;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  border: none;
 }
 
 * {
@@ -200,6 +206,7 @@ header {
   font-size: 20px;
 }
 .popup a {
+  width: -moz-fit-content;
   width: fit-content;
   justify-self: center;
   align-self: center;
