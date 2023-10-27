@@ -67,6 +67,10 @@
   background-color: var(--foret);
 }
 
+.row {
+  align-items: center;
+}
+
 .navbar {
   background-color: var(--asperge);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.337254902);
@@ -127,7 +131,7 @@
   background-repeat: no-repeat;
   border: none;
 }
-.card-image {
+.card-above {
   height: 400px;
 }
 .card-body {
