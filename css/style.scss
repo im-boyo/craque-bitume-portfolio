@@ -38,11 +38,13 @@ section {
     box-shadow: inset 0 5px 10px #00000056;    
 
     &:nth-child(even) {
-        background-color: var(--mindaro);
+        background-color: var(--poudre);
+
     } 
     
     &:nth-child(odd) {
-        background-color: var(--poudre);
+        background-color: var(--mindaro);
+
     }
 }
 
