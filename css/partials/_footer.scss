@@ -26,7 +26,9 @@ footer {
         font-weight: bold;
         font-size: 30px;
         box-shadow: 0 3px 10px #00000056;
-        
+        display: flex;
+        justify-content: center;
+
         &:hover {
             background-color: var(--foret);
             color: var(--poudre);

@@ -1,0 +1,25 @@
+.page404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .col-lg-5 {
+        position: relative;
+    }
+}
+
+.tree {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .page404 {
+        padding-top: 30%;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page404 {
+        padding-top: 35%;
+    }
+}

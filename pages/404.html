@@ -20,20 +20,33 @@
     <header>
         <!-- Bannière popup -->
         <div class="popup">
-            <p class="text">Travail complété dans le cadre du cours Projet Web</p>
-            <a href="https://craquebitume.org/"><button class="button">Accéder au vrai site de
-                    Craque-Bitume</button></a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg"
-                viewBox="0 0 16 16">
-                <path
-                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-            </svg>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text">Travail complété dans le cadre du cours Projet Web</p>
+
+                    </div>
+                    <div class="col-5">
+                        <a href="https://craquebitume.org/"><button class="button">Accéder au vrai site de
+                                Craque-Bitume</button></a>
+                    </div>
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- NavBar -->
         <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="/index.html"><img src="/sources/medias/extras/craquebitume.png" alt=""></a>
+                <a class="navbar-brand" href="/index.html"><img src="/sources/medias/extras/craquebitume.png"
+                        alt=""></a>
 
                 <!-- Hamburger button -->
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
@@ -75,28 +88,48 @@
         </nav>
 
     </header>
+    <section class="empty"></section>
 
-    <h1>
-        Oops! Page non trouvée.
-    </h1>
-    <h2>Erreur 404</h2>
-    <h3>La page que vous recherchez n'existe peut-être plus. Au besoin, n'hésitez pas à communiquer
-        avec nous.
-    </h3>
+    <section class="page404">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 order-lg-first col-md-12 order-last">
+                    <img src="/sources/medias/404/tree.svg" alt="tree" class="tree">
+                    <img src="/sources/medias/404/single_leaf.svg" alt="leaf" class="leaf-solo">
+                </div>
+                <div class="col-lg-7 col-md-12 pb-3">
+                    <h1>
+                        Oups! Page non trouvée.
+                    </h1>
+                    <h2>Erreur 404</h2>
+                    <h3>La page que vous recherchez n'existe peut-être plus. Au besoin, n'hésitez pas à communiquer
+                        avec nous.
+                    </h3>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
     <!-- Oops! Page non trouvée.
     404 Erreur
     La page que vous recherchez n'existe peut-être plus. Au besoin, n'hésitez pas à communiquer
     avec nous.
     © 2023, Craque-Bitume -->
+
     <!-- Footer -->
     <footer class="footer">
+        <img src="/sources/medias/extras/leaf.png"
+            class="leaf2 col-lg-3 pt-lg-0 col-md-4 mt-md-5 col-sm-4 pt-sm-4 mt-sm-5">
         <div class="container-fluid">
             <div class="row mb-4">
-                <a class="footer--logo" href="index.html"><img src="/sources/medias/extras/craquebitume2.png" alt=""></a>
+                <a class="footer--logo" href="index.html"><img src="/sources/medias/extras/craquebitume2.png"
+                        alt=""></a>
             </div>
             <div class="row">
-                <div class="col-lg-5 col-md-3">
+                <div class="col-lg-5 col-md-12 order-lg-1 py-md-5">
                     <h1>NOS PARTENAIRES</h1>
                     <div class="container">
                         <div class="row">
@@ -113,27 +146,28 @@
 
                     </div>
                 </div>
-                <div class="col-lg-2">
-                    <a href="pages/dons.html" class="nav-link btnDonate">Donnez!</a>
+                <div class="col-lg-2 order-lg-2 col-sm-6 pb-sm-5 py-md-0 order-sm-first">
+                    <a href="dons.html" class="nav-link btnDonate">Donnez!</a>
                 </div>
-                <div class="col-lg-5 col-md-3">
+                <div class="col-lg-5 col-md-12 order-lg-3 py-sm-5">
                     <h1>NOUS CONTACTER</h1>
                     <div class="row">
                         <div class="col-12 py-2">
                             <img src="/sources/medias/extras/telephonne.svg" alt="" style="width: 5%;">
-                            <p style="display: inline; width: 95%;">418-523-4580</p><br>
+                            <p style="display: inline; width: 95%; padding-left: 20px;">418-523-4580</p><br>
 
                         </div>
                         <div class="col-12 py-2">
                             <img src="/sources/medias/extras/mail.svg" alt="" style="width: 5%;">
-                            <p style="display: inline; width: 95%;">craque-bitume@gmail.com</p><br>
+                            <p style="display: inline; width: 95%; padding-left: 20px;">craque-bitume@gmail.com</p><br>
 
                         </div>
                         <div class="col-12 py-2">
                             <a
                                 href="https://www.google.com/maps?q=Carrefour+Cardijn+435+rue+Du+Roi,+G1K+2X1&client=firefox-b-d&sca_esv=577675572&sxsrf=AM9HkKkrSkLzRtHY02JImwrbLA0KimU_JA:1698623484537&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiKUNhcnJlZm91ciBDYXJkaWpuIDQzNSBydWUgRHUgUm9pLCBHMUsgMlgxMgUQABiiBDIFEAAYogQyBRAAGKIEMgUQABiiBEjgIlCAHFjcH3ACeACQAQCYAZwBoAHOA6oBAzEuM7gBA8gBAPgBAcICCBAAGKIEGLAD4gMEGAEgQYgGAZAGAw&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjxqqnPuZyCAxUqHTQIHRaLCtcQ_AUoAXoECAQQAw"><img
                                     src="/sources/medias/extras/location.svg" alt="" style="width: 5%;">
-                                <p style="display: inline; width: 95%;">Carrefour Cardijn 435 rue Du Roi, bureaux 6 et
+                                <p style="display: inline; width: 95%; padding-left: 20px;">Carrefour Cardijn 435 rue Du
+                                    Roi, bureaux 6 et
                                     8,
                                     G1K 2X1</p>
                             </a>
@@ -144,7 +178,7 @@
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row order-lg-last">
                     <div class="col-12">
                         <small>
                             <p>© 2023,Craque-Bitume, Minous-slayers | <a
