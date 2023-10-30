@@ -10,7 +10,7 @@
     &2 {
         position: absolute;
         z-index: 2;
-        top: -20%;
+        top: -200px;
         left: -100px;
         transform: rotateZ(20deg); 
     }
@@ -20,5 +20,8 @@
         top: -20%;
         right: -100px;
         transform: rotateZ(160deg) scaleY(-1); 
+        .col-md-4 {
+            top: -100px;   
+        }
     }
 }
