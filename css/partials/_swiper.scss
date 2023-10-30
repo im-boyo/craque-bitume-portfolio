@@ -33,6 +33,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .col-lg-6 {
+        display: flex;
+        justify-content: center;
+    }
     
     img {
         width: 100%;
@@ -50,7 +55,6 @@
         justify-self: center;
         align-self: center;    
         text-align: end;
-        padding-bottom: 50px;
         font-weight: bold;
     }
     p {
@@ -70,3 +74,22 @@
 }
 }
 
+@media screen and (max-width: 992px) {
+    .swiper {
+        &-image {
+            text-align: center;
+            .imgtext {
+                text-align: center;
+            }
+        }
+        &-slide {
+            img {
+                width: 60%;
+            }
+            p, h1 {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+}
