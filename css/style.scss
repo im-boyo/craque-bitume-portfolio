@@ -8,7 +8,8 @@
 @use "partials/footer";
 @use "partials/popup";
 @use "partials/page404";
-
+@use "partials/hero_generique";
+@use "partials/description_base";
 * {
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
@@ -65,4 +66,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.formation--grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-size: 30px;
+    img{
+        max-width: 80%;
+    }
 }
