@@ -377,18 +377,6 @@ footer .btnDonate:active {
   border-radius: 50px;
 }
 
-.description--generique {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: 100px;
-  font-weight: bolder;
-  background-color: var(--mindaro);
-  color: var(--foret);
-  border-top-right-radius: 2vw;
-  margin: 0;
-}
-
 * {
   font-family: "Playfair Display", serif;
   box-sizing: border-box;
@@ -447,4 +435,18 @@ header {
 }
 .formation--grid img {
   max-width: 80%;
+}
+
+.accordion-item {
+  background-color: var(--mindaro);
+  border: none;
+}
+
+.accordion-button {
+  background-color: var(--poudre);
+}
+
+.accordion-button:focus {
+  background-color: var(--asperge);
+  color: var(--poudre);
 }/*# sourceMappingURL=style.css.map */
