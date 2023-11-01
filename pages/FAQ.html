@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -13,120 +12,276 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Équipe</title>
 </head>
 
 <body>
-    <h1>
-        Voici notre Foire aux Questions.
-    </h1>
-    <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Je me suis inscrit·e à une formation mais je ne pourrai finalement pas y assister, que dois-je
-                    faire? </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <dl>
-                        <dt>Notre politique de remboursement: </dt>
-                        <dd>Vous pouvez consulter notre politique de remboursement en défilant la page de la formation
-                            en
-                            question vers le bas. Peu importe la manière dont vous procèderez, nous vous invitons à nous
-                            aviser de votre absence via l'adresse formation@craquebitume.org, nous pourrons ensuite
-                            procéder au remboursement complet ou partiel, si la situation le permet.
-                        </dd>
+    <header>
+        <!-- Bannière popup -->
+        <div class="popup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text">Travail complété dans le cadre du cours Projet Web</p>
 
+                    </div>
+                    <div class="col-5">
+                        <a href="https://craquebitume.org/"><button class="button">Accéder au vrai site de
+                                Craque-Bitume</button></a>
+                    </div>
+                    <div class="col-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
 
-
-                    </dl>
-
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Je suis formateur·rice et j'aimerais collaborer avec Craque-Bitume pour offrir une formation,
-                    comment dois-je m'y prendre?
 
+        <!-- NavBar -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="/sources/medias/extras/craquebitume.png"
+                        alt=""></a>
 
-
+                <!-- Hamburger button -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <dl>
-                        <dt>Comment contacter notre service à la formation: </dt>
-                        <dd>Nous sommes friands de nouvelles idées de formations pour plaire à notre clientèle!
-                            Écrivez-nous directement à formation@craquebitume.orgpour proposer votre idée et il nous
-                            fera
-                            plaisir de considérer votre proposition!
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Comment puis-je accéder au rabais de 5$?
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <dl>
-                        <dt>Comment devenir membre: </dt>
-                        <dd>Ce rabais est offert aux membres de Craque-Bitume. Vous pouvez vous procurer votre
-                            adhésion membre sur notre site web, dans la section magasin général. Une fois connecté à
-                            l'espace membre, le 5$ de rabais s'appliquera automatiquement lors de vos prochains achats!
-                            Ce rabais sur nos formations est notre manière de vous remercier de soutenir notre
-                            organisme.
 
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Comment dois-je m'y prendre pour accéder au prix réduit d'une série de formations?
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    <dl>
-                        <dt>Nos partenaires financiers: </dt>
-                        <dd>Nous pouvons offrir des prix réduits grâce à notre partenaire financier, le Centre de
-                            formation
-                            pour adultes Louis-Jolliet qui reconnaît certaines de nos formations comme une démarche
-                            d'apprentissage citoyenne. Pour y avoir accès, vous devez vous inscrire comme étudiant·e du
-                            Louis-Jolliet et vous engager à certaines obligations supplémentaires. Pour en connaître
-                            davantage, consultez la section de notre site web dédiée à cet effet en cliquant sur « en
-                            savoir
-                            plus » sur la page de la série de formation en question.
+                <!-- Navigation -->
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="hub_volets.html" class="nav-link">Volets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="hub_formations.html" class="nav-link">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="equipe.html" class="nav-link">Équipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="a_propos.html" class="nav-link">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="histoire.html" class="nav-link">Histoire</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="FAQ.html" class="nav-link active">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="dons.html" class="nav-link btnDonate">Donnez!</a>
+                        </li>
 
-                        </dd>
-                    </dl>
+                    </ul>
                 </div>
             </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h1>
+                Voici notre Foire aux Questions.
+            </h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Je me suis inscrit·e à une formation mais je ne pourrai finalement pas y assister, que dois-je
+                            faire? </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <dl>
+                                <dt>Notre politique de remboursement: </dt>
+                                <dd>Vous pouvez consulter notre politique de remboursement en défilant la page de la formation
+                                    en
+                                    question vers le bas. Peu importe la manière dont vous procèderez, nous vous invitons à nous
+                                    aviser de votre absence via l'adresse formation@craquebitume.org, nous pourrons ensuite
+                                    procéder au remboursement complet ou partiel, si la situation le permet.
+                                </dd>
+        
+        
+        
+                            </dl>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Je suis formateur·rice et j'aimerais collaborer avec Craque-Bitume pour offrir une formation,
+                            comment dois-je m'y prendre?
+        
+        
+        
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <dl>
+                                <dt>Comment contacter notre service à la formation: </dt>
+                                <dd>Nous sommes friands de nouvelles idées de formations pour plaire à notre clientèle!
+                                    Écrivez-nous directement à formation@craquebitume.orgpour proposer votre idée et il nous
+                                    fera
+                                    plaisir de considérer votre proposition!
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Comment puis-je accéder au rabais de 5$?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <dl>
+                                <dt>Comment devenir membre: </dt>
+                                <dd>Ce rabais est offert aux membres de Craque-Bitume. Vous pouvez vous procurer votre
+                                    adhésion membre sur notre site web, dans la section magasin général. Une fois connecté à
+                                    l'espace membre, le 5$ de rabais s'appliquera automatiquement lors de vos prochains achats!
+                                    Ce rabais sur nos formations est notre manière de vous remercier de soutenir notre
+                                    organisme.
+        
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Comment dois-je m'y prendre pour accéder au prix réduit d'une série de formations?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <dl>
+                                <dt>Nos partenaires financiers: </dt>
+                                <dd>Nous pouvons offrir des prix réduits grâce à notre partenaire financier, le Centre de
+                                    formation
+                                    pour adultes Louis-Jolliet qui reconnaît certaines de nos formations comme une démarche
+                                    d'apprentissage citoyenne. Pour y avoir accès, vous devez vous inscrire comme étudiant·e du
+                                    Louis-Jolliet et vous engager à certaines obligations supplémentaires. Pour en connaître
+                                    davantage, consultez la section de notre site web dédiée à cet effet en cliquant sur « en
+                                    savoir
+                                    plus » sur la page de la série de formation en question.
+        
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="/sources/medias/extras/leaf.png"
+            class="leaf2 col-lg-3 pt-lg-0 col-md-4 mt-md-5 col-sm-4 pt-sm-4 mt-sm-5">
+        <div class="container-fluid">
+            <div class="row mb-4">
+                <a class="footer--logo" href="index.html"><img src="/sources/medias/extras/craquebitume2.png"
+                        alt=""></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 order-lg-1 py-md-5">
+                    <h1>NOS PARTENAIRES</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <a class="footer--logo--partenaire" href="index.html"><img
+                                        src="/sources/medias/extras/partenaires_enattente.png" alt=""></a>
+                            </div>
+                            <div class="col-6">
+                                <a class="footer--logo--partenaire" href="index.html"><img
+                                        src="/sources/medias/extras/partenaires_enattente.png" alt=""></a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 order-lg-2 col-sm-6 pb-sm-5 py-md-0 order-sm-first">
+                    <a href="dons.html" class="nav-link btnDonate">Donnez!</a>
+                </div>
+                <div class="col-lg-5 col-md-12 order-lg-3 py-sm-5">
+                    <h1>NOUS CONTACTER</h1>
+                    <div class="row">
+                        <div class="col-12 py-2">
+                            <img src="/sources/medias/extras/telephonne.svg" alt="" style="width: 5%;">
+                            <p style="display: inline; width: 95%; padding-left: 20px;">418-523-4580</p><br>
+
+                        </div>
+                        <div class="col-12 py-2">
+                            <img src="/sources/medias/extras/mail.svg" alt="" style="width: 5%;">
+                            <p style="display: inline; width: 95%; padding-left: 20px;">craque-bitume@gmail.com</p><br>
+
+                        </div>
+                        <div class="col-12 py-2">
+                            <a
+                                href="https://www.google.com/maps?q=Carrefour+Cardijn+435+rue+Du+Roi,+G1K+2X1&client=firefox-b-d&sca_esv=577675572&sxsrf=AM9HkKkrSkLzRtHY02JImwrbLA0KimU_JA:1698623484537&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiKUNhcnJlZm91ciBDYXJkaWpuIDQzNSBydWUgRHUgUm9pLCBHMUsgMlgxMgUQABiiBDIFEAAYogQyBRAAGKIEMgUQABiiBEjgIlCAHFjcH3ACeACQAQCYAZwBoAHOA6oBAzEuM7gBA8gBAPgBAcICCBAAGKIEGLAD4gMEGAEgQYgGAZAGAw&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjxqqnPuZyCAxUqHTQIHRaLCtcQ_AUoAXoECAQQAw"><img
+                                    src="/sources/medias/extras/location.svg" alt="" style="width: 5%;">
+                                <p style="display: inline; width: 95%; padding-left: 20px;">Carrefour Cardijn 435 rue Du
+                                    Roi, bureaux 6 et
+                                    8,
+                                    G1K 2X1</p>
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="row order-lg-last">
+                    <div class="col-12">
+                        <small>
+                            <p>© 2023,Craque-Bitume, Minous-slayers | <a
+                                    href="https://github.com/Jasmine-Lapierre/craque-bitume-minous-slayers/">Lien vers
+                                    le github</a></p>
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 
 </html>

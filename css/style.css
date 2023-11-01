@@ -179,10 +179,12 @@
 .don > .container-fluid label {
   font-size: 20px;
   font-weight: bold;
+  color: var(--foret);
 }
 .don > .container-fluid input {
   background: rgba(246, 249, 241, 0.5);
   border-radius: 25px;
+  border: 2px solid var(--foret);
 }
 .don > .container-fluid button {
   background-color: var(--poudre);
@@ -218,6 +220,9 @@ footer {
   color: var(--foret);
   font-weight: bold;
   box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.337254902);
+}
+footer a {
+  color: var(--foret);
 }
 footer .row {
   align-items: flex-start;
@@ -314,6 +319,7 @@ footer .btnDonate:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--foret);
 }
 .page404 .col-lg-5 {
   position: relative;
@@ -364,9 +370,6 @@ section {
   position: relative;
   padding: 10vw 50px;
   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.337254902);
-}
-section.empty {
-  display: none;
 }
 section:nth-child(even) {
   background-color: var(--poudre);
