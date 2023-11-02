@@ -12,6 +12,43 @@
     width: 100%;
 }
 
+.leaf {
+    &-solo {
+        position: absolute;
+        top: 35%;
+        right: 10%;
+        transform: rotate(30deg);
+        width: 35%;
+        }
+}
+
+.motionPath {
+    position: absolute;
+    height: 60%;
+    left: 60%;
+    bottom: 10%;
+    &-wind {
+        bottom: 30%;
+        height: 40%;
+        left: -20%;
+        transform: rotate(-8deg);
+
+        &2 {
+            height: 90%;
+            left: -10%;
+            bottom: -5%;
+            transform: rotate(-8deg);
+        }
+    }
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #1d1d1b;
+    stroke-miterlimit: 10;
+}
+
+
 @media screen and (max-width: 992px) {
     .page404 {
         padding-top: 30%;

@@ -10,6 +10,8 @@
 @use "partials/page404";
 @use "partials/hero_generique";
 @use "partials/description_base";
+@use "partials/hubs";
+@use "partials/FAQ";
 * {
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
@@ -57,7 +59,7 @@ section {
 //Header
 header {
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     width: 100%;
 }
 
@@ -77,16 +79,16 @@ header {
     }
 }
 
-.accordion-item{
-    background-color: var(--mindaro);
-    border: none;
-}
-.accordion-button{
-    background-color: var(--poudre);
-}
-.accordion-button:focus{
-    background-color: var(--asperge);
-    color: var(--poudre);
 
 
+.voirPlus {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+    a {
+        color: var(--foret);
+        font-weight: bold;
+    }
+    
 }
+

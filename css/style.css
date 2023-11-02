@@ -2,7 +2,7 @@
   --foret: #1E5220;
   --asperge: #70B074;
   --mindaro: #D4E084;
-  --vertfonce: #223023;
+  --vertfonce: #2a462c;
   --poudre: #F6F9F1;
 }
 
@@ -139,13 +139,6 @@
   right: -100px;
   transform: rotateZ(160deg) scaleY(-1);
 }
-.leaf-solo {
-  position: absolute;
-  top: 40%;
-  right: 10%;
-  transform: rotate(30deg);
-  width: 35%;
-}
 
 .card {
   background-image: url(/sources/medias/accueil/pexels-photo-121629_535x.webp);
@@ -161,6 +154,7 @@
   height: 200px;
 }
 .card-body {
+  color: var(--vertfonce);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
@@ -332,6 +326,39 @@ footer .btnDonate:active {
   width: 100%;
 }
 
+.leaf-solo {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  transform: rotate(30deg);
+  width: 35%;
+}
+
+.motionPath {
+  position: absolute;
+  height: 60%;
+  left: 60%;
+  bottom: 10%;
+}
+.motionPath-wind {
+  bottom: 30%;
+  height: 40%;
+  left: -20%;
+  transform: rotate(-8deg);
+}
+.motionPath-wind2 {
+  height: 90%;
+  left: -10%;
+  bottom: -5%;
+  transform: rotate(-8deg);
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #1d1d1b;
+  stroke-miterlimit: 10;
+}
+
 @media screen and (max-width: 992px) {
   .page404 {
     padding-top: 30%;
@@ -353,7 +380,7 @@ footer .btnDonate:active {
 }
 
 .hero-generique--section {
-  height: 80vh;
+  height: 70vh;
   padding: 0;
   position: relative;
 }
@@ -368,6 +395,10 @@ footer .btnDonate:active {
   color: var(--foret);
   border-top-right-radius: 2vw;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 }
 .hero-generique--titre .categorie {
   font-size: 20px;
@@ -375,6 +406,24 @@ footer .btnDonate:active {
   color: var(--poudre);
   padding: 10px;
   border-radius: 50px;
+}
+
+.card-hub {
+  text-decoration: none;
+}
+
+.accordion-item {
+  background-color: var(--mindaro);
+  border: none;
+}
+
+.accordion-button {
+  background-color: var(--poudre);
+}
+
+.accordion-button:focus {
+  background-color: var(--asperge);
+  color: var(--poudre);
 }
 
 * {
@@ -418,7 +467,7 @@ section:nth-child(odd) {
 
 header {
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   width: 100%;
 }
 
@@ -437,16 +486,12 @@ header {
   max-width: 80%;
 }
 
-.accordion-item {
-  background-color: var(--mindaro);
-  border: none;
+.voirPlus {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 3;
 }
-
-.accordion-button {
-  background-color: var(--poudre);
-}
-
-.accordion-button:focus {
-  background-color: var(--asperge);
-  color: var(--poudre);
+.voirPlus a {
+  color: var(--foret);
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */

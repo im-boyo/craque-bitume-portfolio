@@ -1,0 +1,13 @@
+.accordion-item{
+    background-color: var(--mindaro);
+    border: none;
+}
+.accordion-button{
+    background-color: var(--poudre);
+}
+.accordion-button:focus{
+    background-color: var(--asperge);
+    color: var(--poudre);
+
+
+}
