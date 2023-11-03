@@ -455,6 +455,10 @@ footer .btnDonate:active {
   border-radius: 50px;
 }
 
+.description-generale {
+  color: var(--foret);
+}
+
 .card-hub {
   text-decoration: none;
 }
@@ -558,4 +562,8 @@ header {
 
 .jasmine {
   background-image: url(../sources/medias/apropos/jasmine.jpg);
+}
+
+.deuxieme {
+  color: var(--foret);
 }/*# sourceMappingURL=style.css.map */
