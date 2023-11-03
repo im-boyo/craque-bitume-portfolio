@@ -76,6 +76,10 @@ gsap.to('.leaf-no2', {
   repeat: -1,
 })
 
+gsap.timeline({repeat: -1})
+.fromTo(".leaf-no2", {opacity: "0%"}, {opacity: "100%", duration: 3})
+.fromTo(".leaf-no2", {opacity: "100%"}, {opacity: "0%", duration: 3})
+
 gsap.to('.leaf-no3', {
   motionPath: {
     align: '#pathWind2',
@@ -85,8 +89,12 @@ gsap.to('.leaf-no3', {
   duration: 6,
   repeat: -1,
   delay: 2,
-  opacity: 1,
 });
+
+gsap.timeline({repeat: -1, delay: 2})
+.fromTo(".leaf-no3", {opacity: "0%"}, {opacity: "100%", duration: 3})
+.fromTo(".leaf-no3", {opacity: "100%"}, {opacity: "0%", duration: 3})
+
 
 //Animation bloc dons
 
