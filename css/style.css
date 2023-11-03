@@ -455,6 +455,9 @@ footer .btnDonate:active {
 .card-hub {
   text-decoration: none;
 }
+.card-1 {
+  border: 10px solid var(--mindaro);
+}
 
 .trier {
   display: flex;
