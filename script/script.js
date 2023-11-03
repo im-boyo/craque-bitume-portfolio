@@ -5,13 +5,13 @@ let closePopup = document.querySelector(".bi-x-lg");
 let enleve = localStorage.getItem("AppuieX");
 
 
-let banniereEnlever = function(){
-  popup.style.display = "none";
+let banniereRajouter = function(){
+  popup.style.display = "flex";
 }
-if(enleve){
-  banniereEnlever();
+if(!enleve){
+  console.log(enleve)
+  banniereRajouter();
 }
-
 
 
 
