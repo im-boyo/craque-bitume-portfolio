@@ -13,6 +13,20 @@
 }
 
 .leaf {
+    &-no2 {
+        position: absolute;
+        top: -100%;
+        right: 10%;
+        transform: rotate(30deg);
+        width: 35%;
+    }
+    &-no3 {
+        position: absolute;
+        top: -100%;
+        right: 10%;
+        transform: rotate(30deg);
+        width: 35%;
+    }
     &-solo {
         position: absolute;
         top: 35%;
@@ -29,14 +43,14 @@
     bottom: 10%;
     &-wind {
         bottom: 30%;
-        height: 40%;
-        left: -20%;
+        height: 70%;
+        left: -10%;
         transform: rotate(-8deg);
 
         &2 {
-            height: 90%;
-            left: -10%;
-            bottom: -5%;
+            height: 80%;
+            left: -5%;
+            bottom: 25%;
             transform: rotate(-8deg);
         }
     }
@@ -44,8 +58,6 @@
 
 .cls-1 {
     fill: none;
-    stroke: #1d1d1b;
-    stroke-miterlimit: 10;
 }
 
 

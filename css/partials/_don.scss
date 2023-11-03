@@ -44,4 +44,29 @@
         }
     
     }
+    .row {
+        position: relative;
+    }
+    .jar {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+    .lid {
+        z-index: 2;
+        position: absolute;
+        top: 35%;
+        left: 9%;
+        width: 21%;
+    }
+    .leafJar {
+        position: absolute;
+        width: 10%;
+        left: 15%;
+        top: -30%;
+    }
+    .leaf-jar {
+        position: absolute;
+        width: 10%;
+    }
 }

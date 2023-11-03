@@ -10,10 +10,18 @@
     background-repeat: no-repeat;
     border: none;
     height: 100%;
+    transition-property: box-shadow, transform;
+    transition-duration: 0.3s;
+
+    &:hover {
+        box-shadow: 0px 0px 10px 5px var(--foret);
+        transform: scale(1.03);
+    }
 
     &-img-top {
-        height: 200px;
+        height: 300px;
     }
+
     &-body {
         color: var(--vertfonce);
         backdrop-filter: blur(10px);
@@ -25,5 +33,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+section.volets {
+    .card {
+        &-img-top {
+            height: 450px;
+
+        }
     }
 }

@@ -44,6 +44,13 @@ section {
     position: relative;
     padding: 10vw 50px;
     box-shadow: inset 0 5px 10px #00000056;
+    
+    a {
+    color: var(--foret);
+    font-weight: bold;
+    font-size: 30px;
+    
+}
 
     &:nth-child(even) {
         background-color: var(--poudre);

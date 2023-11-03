@@ -47,8 +47,7 @@
   justify-self: center;
   align-self: center;
   border-radius: 25px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .swiper-slide .text {
   justify-self: center;
@@ -149,14 +148,19 @@
   background-repeat: no-repeat;
   border: none;
   height: 100%;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.3s;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 5px var(--foret);
+  transform: scale(1.03);
 }
 .card-img-top {
-  height: 200px;
+  height: 300px;
 }
 .card-body {
   color: var(--vertfonce);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   border: none;
@@ -165,6 +169,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section.volets .card-img-top {
+  height: 450px;
 }
 
 .donate-image img {
@@ -201,6 +209,31 @@
   transform: translateY(3px);
   box-shadow: none;
   transition: box-shadow 0.3s, transform 0.3s;
+}
+.don .row {
+  position: relative;
+}
+.don .jar {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+.don .lid {
+  z-index: 2;
+  position: absolute;
+  top: 35%;
+  left: 9%;
+  width: 21%;
+}
+.don .leafJar {
+  position: absolute;
+  width: 10%;
+  left: 15%;
+  top: -30%;
+}
+.don .leaf-jar {
+  position: absolute;
+  width: 10%;
 }
 
 footer {
@@ -281,7 +314,6 @@ footer .btnDonate:active {
   font-size: 20px;
 }
 .popup a {
-  width: -moz-fit-content;
   width: fit-content;
   justify-self: center;
   align-self: center;
@@ -326,6 +358,20 @@ footer .btnDonate:active {
   width: 100%;
 }
 
+.leaf-no2 {
+  position: absolute;
+  top: -100%;
+  right: 10%;
+  transform: rotate(30deg);
+  width: 35%;
+}
+.leaf-no3 {
+  position: absolute;
+  top: -100%;
+  right: 10%;
+  transform: rotate(30deg);
+  width: 35%;
+}
 .leaf-solo {
   position: absolute;
   top: 35%;
@@ -342,21 +388,19 @@ footer .btnDonate:active {
 }
 .motionPath-wind {
   bottom: 30%;
-  height: 40%;
-  left: -20%;
+  height: 70%;
+  left: -10%;
   transform: rotate(-8deg);
 }
 .motionPath-wind2 {
-  height: 90%;
-  left: -10%;
-  bottom: -5%;
+  height: 80%;
+  left: -5%;
+  bottom: 25%;
   transform: rotate(-8deg);
 }
 
 .cls-1 {
   fill: none;
-  stroke: #1d1d1b;
-  stroke-miterlimit: 10;
 }
 
 @media screen and (max-width: 992px) {
@@ -412,6 +456,11 @@ footer .btnDonate:active {
   text-decoration: none;
 }
 
+.trier {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .accordion-item {
   background-color: var(--mindaro);
   border: none;
@@ -457,6 +506,11 @@ section {
   position: relative;
   padding: 10vw 50px;
   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.337254902);
+}
+section a {
+  color: var(--foret);
+  font-weight: bold;
+  font-size: 30px;
 }
 section:nth-child(even) {
   background-color: var(--poudre);

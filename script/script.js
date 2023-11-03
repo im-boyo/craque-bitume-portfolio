@@ -1,64 +1,85 @@
-gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(MotionPathPlugin);
+
 
 let popup = document.querySelector(".popup");
 let closePopup = document.querySelector(".bi-x-lg");
 
 //Fermer popup
-closePopup.addEventListener("click", function(){
-    popup.style.display = "none";
+closePopup.addEventListener("click", function () {
+  popup.style.display = "none";
 })
 
 //Stocker X cliqué en local storage
 
 //Swiper
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-  //Animation page 404
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-  gsap.to('.no1', {
-    motionPath: {
-      align: '#pathFall',
-      path: '#pathFall',
-    },
-    duration: 10,
-    ease: "power1.inOut",
-  })
-  
-  gsap.timeline()
-  .to(".no1", {rotate: "-20deg", delay: 0.3, duration: 3.3, ease: "power1.in"})
-  .to(".no1", {rotate: "20deg", delay: 0.3, duration: 1.1, ease: "power1.in"})
-  .to(".no1", {rotate: "-20deg", delay: 0.3, duration: 1.2, ease: "power1.in"})
-  .to(".no1", {rotate: "0deg", delay: 0.3, duration: 2.8, ease: "power1.in"})
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
-  gsap.to('.no2', {
-    motionPath: {
-      align: '#pathWind',
-      path: '#pathWind',
-      autoRotate: true,
-    },
-    duration: 6,
-    repeat: -1,
-    delay: 1,
-  })
 
-  gsap.timeline()
-  .from(".no2", {opacity: 1})
-  .to(".no2", {opacity: 0, duration: 0.5})
-  .to(".no2", {opacity: 1, duration: 3.5})
-  .to(".no2", {opacity: 0, duration: 2})
+//Animation page 404
+gsap.registerPlugin(MotionPathPlugin);
+
+gsap.to('.leaf-solo', {
+  motionPath: {
+    align: '#pathFall',
+    path: '#pathFall',
+  },
+  duration: 10,
+  ease: "power1.inOut",
+})
+
+gsap.timeline()
+  .to(".leaf-solo", { rotate: "-20deg", delay: 0.3, duration: 3.3, ease: "power1.in" })
+  .to(".leaf-solo", { rotate: "20deg", delay: 0.3, duration: 1.1, ease: "power1.in" })
+  .to(".leaf-solo", { rotate: "-20deg", delay: 0.3, duration: 1.2, ease: "power1.in" })
+  .to(".leaf-solo", { rotate: "0deg", delay: 0.3, duration: 2.8, ease: "power1.in" })
+
+gsap.to('.leaf-no2', {
+  motionPath: {
+    align: '#pathWind',
+    path: '#pathWind',
+    autoRotate: true,
+  },
+  duration: 6,
+  repeat: -1,
+})
+
+gsap.to('.leaf-no3', {
+  motionPath: {
+    align: '#pathWind2',
+    path: '#pathWind2',
+    autoRotate: true,
+  },
+  duration: 6,
+  repeat: -1,
+  delay: 2,
+  opacity: 1,
+});
+
+//Animation bloc dons
+
+gsap.to('.leaf-jar', {
+  motionPath: {
+    align: '#pathJar',
+    path: '#pathJar',
+  },
+  duration: 5,
+  repeat: -1,
+  ease: "power1.inOut",
+})
+
+gsap.timeline()
+.to(".leaf-jar", {opacity: 0, duration: 3}, {opacity: 1, duration: 3})
