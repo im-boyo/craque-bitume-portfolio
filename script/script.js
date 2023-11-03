@@ -22,7 +22,7 @@ closePopup.addEventListener("click", function(){
     localStorage.setItem("AppuieX", "true");
 
 })
-/*gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 
 
