@@ -47,7 +47,8 @@
   justify-self: center;
   align-self: center;
   border-radius: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .swiper-slide .text {
   justify-self: center;
@@ -165,7 +166,8 @@
 }
 .card-body {
   color: var(--vertfonce);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   border: none;
@@ -303,7 +305,7 @@ footer .btnDonate:active {
   background-color: var(--mindaro);
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   padding: 25px;
   color: var(--foret);
   font-weight: bold;
@@ -319,6 +321,7 @@ footer .btnDonate:active {
   font-size: 20px;
 }
 .popup a {
+  width: -moz-fit-content;
   width: fit-content;
   justify-self: center;
   align-self: center;
@@ -575,4 +578,14 @@ header {
 
 .deuxieme {
   color: var(--foret);
+}
+
+.card-body.equipe {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card-img-top.equipe {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }/*# sourceMappingURL=style.css.map */
