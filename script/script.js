@@ -2,15 +2,34 @@
 
 let popup = document.querySelector(".popup");
 let closePopup = document.querySelector(".bi-x-lg");
+let enleve = localStorage.getItem("AppuieX");
+
+
+let banniereEnlever = function(){
+  popup.style.display = "none";
+}
+if(enleve){
+  banniereEnlever();
+}
+
+
+
+
 
 //Fermer popup
-closePopup.addEventListener("click", function () {
-  popup.style.display = "none";
+closePopup.addEventListener("click", function(){
+    popup.style.display = "none";
+    localStorage.setItem("AppuieX", "true");
+
 })
+/*gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(MotionPathPlugin);
+
 
 //Stocker X cliqué en local storage
 
 //Swiper
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
