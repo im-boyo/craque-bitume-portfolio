@@ -102,11 +102,13 @@ gsap.to('.leaf-jar', {
   motionPath: {
     align: '#pathJar',
     path: '#pathJar',
+    autoRotate: true,
   },
-  duration: 5,
+  duration: 6,
   repeat: -1,
   ease: "power1.inOut",
 })
 
-gsap.timeline()
-.to(".leaf-jar", {opacity: 0, duration: 3}, {opacity: 1, duration: 3})
+gsap.timeline({repeat: -1})
+.fromTo(".leaf-jar", {opacity: "0%"}, {opacity: "100%", duration: 3, })
+.fromTo(".leaf-jar", {opacity: "100%"}, {opacity: "0%", duration: 3})
