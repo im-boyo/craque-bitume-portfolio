@@ -2,7 +2,7 @@
 @use "variables";
 
 .card {
-    background-image: url(/sources/medias/accueil/pexels-photo-121629_535x.webp);
+    background-image: url(../../sources/medias/accueil/pexels-photo-121629_535x.webp);
     width: 100%;
     background-size: cover;
     border-radius: 25px;
@@ -14,7 +14,7 @@
     transition-duration: 0.3s;
 
     &-equipe {
-        background-image: url(../sources/medias/extras/empty.png);
+        background-image: url(../../sources/medias/extras/empty.png);
     }
 
     &:hover {

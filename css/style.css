@@ -140,7 +140,7 @@
 }
 
 .card {
-  background-image: url(/sources/medias/accueil/pexels-photo-121629_535x.webp);
+  background-image: url(../../sources/medias/accueil/pexels-photo-121629_535x.webp);
   width: 100%;
   background-size: cover;
   border-radius: 25px;
@@ -152,7 +152,7 @@
   transition-duration: 0.3s;
 }
 .card-equipe {
-  background-image: url(../sources/medias/extras/empty.png);
+  background-image: url(../../sources/medias/extras/empty.png);
 }
 .card:hover {
   box-shadow: 0px 0px 10px 5px var(--foret);
